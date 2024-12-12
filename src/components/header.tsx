@@ -43,7 +43,7 @@ export default function Header({
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1">
                 <Image
-                  src={scrolled ? "/Frame 4.png" : "/Frame 5.png"}
+                  src={scrolled ? "/colored-logo.png" : "/white-logo.png"}
                   alt="WidiaTech Logo"
                   width={60}
                   height={60}
@@ -55,7 +55,7 @@ export default function Header({
                     scrolled
                       ? "bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
                       : "text-white",
-                    "aggressive-font text-sm" // Custom font class
+                    "aggressive-font text-sm"
                   )}
                 >
                   WidiaTech

@@ -263,7 +263,7 @@ export default function Home() {
 
       {/* Digital Products Section */}
       <section id="produk" className="py-24 px-4 bg-black scroll-mt-20">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">{t.digitalProducts.title}</h2>
             <p className="text-gray-300 text-xl">{t.digitalProducts.subtitle}</p>
@@ -351,7 +351,7 @@ export default function Home() {
 
       {/* Contact Section / Footer */}
       <footer id="kontak" className="py-16 px-4 bg-gray-900 border-t border-white/10">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto md:px-10 w-full">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center gap-4">
               <Image
