@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import LanguageSelector from "@/components/language-selector";
+// import LanguageSelector from "@/components/language-selector";
 import { useLanguage } from "@/lib/language-context";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
@@ -13,8 +13,8 @@ const DynamicScrollHeader = dynamic(() => import("./dynamic-scroll-header"), {
 });
 
 export default function Header({
-  language,
-  setLanguage,
+  // language,
+  // setLanguage,
 }: {
   language: string;
   setLanguage: (lang: string) => void;
@@ -83,19 +83,19 @@ export default function Header({
                 >
                   {t.nav.digitalProducts}
                 </Link>
-                <Link
+                {/* <Link
                   href="#testimoni"
                   onClick={() => scrollToSection("testimoni")}
                   className="text-base font-medium text-gray-200 hover:text-purple-400 transition-colors duration-200"
                 >
                   {t.nav.testimonials}
-                </Link>
+                </Link> */}
               </nav>
               <div className="hidden md:flex items-center gap-4">
-                <LanguageSelector
+                {/* <LanguageSelector
                   language={language}
                   setLanguage={setLanguage}
-                />
+                /> */}
                 <Button
                   className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
                   asChild
