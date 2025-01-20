@@ -18,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/header";
-import LanguageSelector from "@/components/language-selector";
+// import LanguageSelector from "@/components/language-selector";
 import { useLanguage } from "@/lib/language-context";
 // import { TestimonialCard } from "@/components/testimonial-card"
 // import { TestimonialSection } from "@/components/testimonial-section"
@@ -100,13 +100,13 @@ export default function Home() {
               >
                 {t.nav.digitalProducts}
               </Link>
-              <Link
+              {/* <Link
                 href="#testimoni"
                 onClick={() => scrollToSection("testimoni")}
                 className="text-2xl font-medium text-gray-200 hover:text-purple-400 transition-colors duration-200"
               >
                 {t.nav.testimonials}
-              </Link>
+              </Link> */}
               <div className="flex gap-2 items-center">
                 <Button
                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition-opacity duration-200 text-lg px-6 py-3"
@@ -121,10 +121,10 @@ export default function Home() {
                     {t.nav.contactUs}
                   </Link>
                 </Button>
-                <LanguageSelector
+                {/* <LanguageSelector
                   language={language}
                   setLanguage={setLanguage}
-                />
+                /> */}
               </div>
             </nav>
           </div>
@@ -504,10 +504,10 @@ export default function Home() {
                 <span>@widiatech</span>
               </Link> */}
               <Link
-                href="https://www.instagram.com/widiatech/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:widiatech.co@gmail.com"
+                target="_self"
                 className="flex items-center gap-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
+                aria-label="Send an email to widiatech.co@gmail.com"
               >
                 <Mail className="h-5 w-5" />
                 <span>widiatech.co@gmail.com</span>
