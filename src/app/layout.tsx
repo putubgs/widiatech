@@ -1,6 +1,7 @@
 import { LanguageProvider } from '@/lib/language-context'
 import './globals.css'
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: 'WidiaTech',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <LanguageProvider>
           {children}
+          <Analytics />
         </LanguageProvider>
       </body>
     </html>
